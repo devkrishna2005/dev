@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Question For You, My Love ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="heart-container"></div>
+  <div class="container">
+    <h1>My Dearest tanishka, Will You Be My Valentine?</h1>
+
+    <div class="question-card">
+      <p>1. Do you believe in love at first sight, or should I walk by again?</p>
+      <img src="https://media.giphy.com/media/n51vGlTeaipp7LrgxY/giphy.gif" class="question-gif">
+      <div class="buttons">
+        <button class="yes-btn" onclick="nextQuestion()">Yes</button>
+        <button class="no-btn" onclick="nextQuestion()">No</button>
+      </div>
+    </div>
+
+    <div class="question-card hidden">
+      <p>2. If I were a cat, would you still love me?</p>
+      <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" class="question-gif">
+      <div class="buttons">
+        <button class="yes-btn" onclick="nextQuestion()">Yes</button>
+        <button class="no-btn" onclick="nextQuestion()">No</button>
+      </div>
+    </div>
+
+    <div class="question-card hidden final-question">
+      <p>3. So, my love, will you be my Valentine?</p>
+      <img src="https://media.giphy.com/media/UipOKjacwiOCRopHzJ/giphy.gif" class="question-gif">
+      <div class="buttons">
+        <button class="yes-btn final-yes" onclick="showResult('yes')">YES! ❤️</button>
+        <button class="no-btn final-no" onmouseover="startRunning(this)" onmouseout="stopRunning()">NO</button>
+      </div>
+    </div>
+
+    <div class="result-card hidden">
+      <h2>YES! I KNEW IT! 🥰</h2>
+      <p>Thank you for saying YES! You've made me the happiest person. Can't wait for our special day!</p>
+      <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" class="result-gif">
+    </div>
+    <div class="result-card hidden no-result">
+      <h2>Oops! Try Again? 🤔</h2>
+      <p>It seems that "No" button is a bit stubborn. Why don't you try clicking "YES" instead? 😉</p>
+      <img src="https://media.giphy.com/media/Jt4sQOFEh29Ob8KAxg/giphy.gif" class="result-gif">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
